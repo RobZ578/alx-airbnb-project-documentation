@@ -1,34 +1,22 @@
-# 📖 Airbnb Clone – User Stories
+📖 User Stories
 
-This document translates the interactions from the **use case diagram** into **user stories** that describe the core functionalities of the Airbnb Clone backend.
+User Registration
+As a guest or host, I want to be able to register an account so that I can access the platform and use its services.
 
----
+Property Management
+As a host, I want to add, edit, or remove property listings so that I can manage the rentals I offer.
 
-## 👥 User Stories
+Search and Booking
+As a guest, I want to search for properties by location, price, and amenities so that I can find and book a place that fits my needs.
 
-1. **User Registration & Authentication**
-   - As a **guest or host**, I want to **register and log in** to the platform so that I can securely access my account and use the application.  
+Payments
+As a guest, I want to make secure online payments for my bookings so that I can confirm reservations, and as a host, I want to receive payouts once bookings are completed.
 
-2. **Property Management**
-   - As a **host**, I want to **list my property with details (title, description, price, location, amenities, and availability)** so that guests can find and book it.  
-   - As a **host**, I want to **update or delete my listings** so that I can keep my property information accurate and relevant.  
+Reviews and Ratings
+As a guest, I want to leave reviews and ratings for properties I’ve stayed in so that I can share my experience with future guests, and as a host, I want to respond to reviews to maintain trust.
 
-3. **Search & Booking**
-   - As a **guest**, I want to **search for properties using filters like location, price range, and amenities** so that I can find a suitable place to stay.  
-   - As a **guest**, I want to **book a property for specific dates** so that I can secure accommodation for my trip.  
+Booking Management
+As a guest, I want to cancel a booking within the allowed timeframe so that I have flexibility, and as a host, I want to confirm or reject bookings so that I maintain control of my property availability.
 
-4. **Payment System**
-   - As a **guest**, I want to **make a secure payment through the system** so that my booking is confirmed and the host is paid.  
-   - As a **host**, I want to **receive payouts after bookings are completed** so that I can earn income from my property.  
-
-5. **Reviews & Ratings**
-   - As a **guest**, I want to **leave a review and rating for a property after my stay** so that I can share my experience with others.  
-   - As a **host**, I want to **respond to guest reviews** so that I can provide feedback and maintain my reputation.  
-
-6. **Admin Features**
-   - As an **admin**, I want to **monitor and manage users, properties, bookings, and payments** so that I can ensure the platform runs smoothly and securely.  
-
----
-
-## ✅ Summary
-These user stories define the **functional expectations** of the system from different perspectives (Guest, Host, Admin). They will guide the design and development of the Airbnb Clone backend.
+Notifications
+As a user, I want to receive email and in-app notifications for bookings, cancellations, and payments so that I stay informed in real time.
