@@ -1,60 +1,71 @@
-# 🎭 Airbnb Clone – Use Case Diagram
+# Airbnb Clone – Backend Requirements
 
-## 📌 Objective
-The objective of this task is to **visualize system interactions** between different actors (Users, Hosts, Admins, Payment Gateway) and the system. The diagram highlights the main features such as **user registration, property booking, payments, and reviews**.
-
----
-
-## 📊 Use Case Diagram
-The diagram has been created using **Draw.io** and exported as a **PNG**.
-
-📂 Directory: `use-case-diagram/`  
-📄 Files:  
-- `airbnb-use-case.png` (exported diagram)  
-- `README.md` (this file)  
+## 📌 Overview
+This document provides the backend requirements for the Airbnb Clone project.  
+It outlines the actors, system interactions, and core features necessary for building a functional, secure, and scalable platform.
 
 ---
 
 ## 👥 Actors
-- **Guest (User)** → Registers, logs in, searches, books properties, makes payments, and leaves reviews.  
-- **Host** → Lists properties, manages listings, views bookings.  
-- **Admin** → Monitors users, properties, bookings, and payments.  
-- **Payment Gateway** → Processes guest payments and host payouts.  
+- **Guest (User):** Registers, searches for properties, makes bookings, payments, and leaves reviews.
+- **Host:** Registers, manages property listings, accepts/cancels bookings, and receives payments.
+- **Admin:** Monitors and manages users, listings, bookings, and payments.
+- **Payment Gateway (External Service):** Handles secure online payments and payouts.
 
 ---
 
-## 🎯 Key Use Cases
-1. **User Management**
-   - Register new account  
-   - Login/Logout  
-   - Update profile  
+## 🔑 Core Features
 
-2. **Property Management**
-   - Add property  
-   - Update/Delete property  
-   - View listings  
+### 1. User Management
+- Sign up as Guest or Host
+- Log in securely using email/password or OAuth (Google, Facebook)
+- Profile management with photo, contact info, and preferences
 
-3. **Booking System**
-   - Search for properties  
-   - Book a property  
-   - Cancel booking  
+### 2. Property Listings
+- Hosts can add new listings with title, description, location, price, and amenities
+- Edit or delete property listings
+- Manage property availability
 
-4. **Payment System**
-   - Make payment  
-   - Process refund  
-   - Host payout  
+### 3. Search and Booking
+- Search properties by filters (location, price, amenities, guests)
+- Create and manage bookings with real-time availability validation
+- Cancel bookings (based on policy)
+- Track booking statuses (pending, confirmed, canceled, completed)
 
-5. **Review System**
-   - Leave review & rating  
-   - Host responds to review  
+### 4. Payments
+- Guests pay securely via third-party payment gateway (e.g., Stripe, PayPal)
+- Hosts receive payouts after booking completion
+- Multi-currency support
 
-6. **Admin Features**
-   - Manage users  
-   - Manage properties  
-   - Monitor transactions  
+### 5. Reviews and Ratings
+- Guests leave reviews and ratings for properties
+- Hosts can respond to reviews
+- Reviews linked to specific bookings
+
+### 6. Notifications
+- Email and in-app notifications for bookings, cancellations, and payments
+
+### 7. Admin Management
+- Manage users (Guests, Hosts)
+- Oversee property listings
+- Monitor bookings and payments
+- Handle disputes
 
 ---
 
-## ✅ Deliverable
-This use case diagram provides a **clear visual representation** of how different actors interact with the Airbnb Clone system. It ensures that all key **functional requirements** are captured before moving to detailed system design.
+## 🛠️ Technical Requirements
+- **Database:** PostgreSQL/MySQL with tables for Users, Properties, Bookings, Reviews, Payments  
+- **API:** RESTful endpoints with proper HTTP methods and status codes  
+- **Authentication:** JWT-based sessions with role-based access control  
+- **File Storage:** Cloud storage for images (e.g., AWS S3, Cloudinary)  
+- **Email Service:** Integration with providers like SendGrid or Mailgun  
+- **Error Handling:** Global error handling and structured logging  
 
+---
+
+## 🚀 Non-Functional Requirements
+- **Scalability:** Modular architecture, load balancers, horizontal scaling  
+- **Security:** Data encryption, secure authentication, firewalls, and rate limiting  
+- **Performance:** Database query optimization and caching (Redis)  
+- **Testing:** Unit and integration testing with automated API tests
+  
